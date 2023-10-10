@@ -11,6 +11,8 @@
 		F4589BE22AD4AC8F0036EB52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BE12AD4AC8F0036EB52 /* ContentView.swift */; };
 		F4589BE42AD4AC900036EB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4589BE32AD4AC900036EB52 /* Assets.xcassets */; };
 		F4589BE82AD4AC900036EB52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4589BE72AD4AC900036EB52 /* Preview Assets.xcassets */; };
+		F4589BEF2AD4B6F80036EB52 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BEE2AD4B6F80036EB52 /* ButtonView.swift */; };
+		F4589BF12AD4BE6C0036EB52 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F4589BE32AD4AC900036EB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4589BE52AD4AC900036EB52 /* PHONE_DOWN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PHONE_DOWN.entitlements; sourceTree = "<group>"; };
 		F4589BE72AD4AC900036EB52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4589BEE2AD4B6F80036EB52 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				F4589BDF2AD4AC8F0036EB52 /* PHONE_DOWNApp.swift */,
 				F4589BE12AD4AC8F0036EB52 /* ContentView.swift */,
+				F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */,
+				F4589BEE2AD4B6F80036EB52 /* ButtonView.swift */,
 				F4589BE32AD4AC900036EB52 /* Assets.xcassets */,
 				F4589BE52AD4AC900036EB52 /* PHONE_DOWN.entitlements */,
 				F4589BE62AD4AC900036EB52 /* Preview Content */,
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4589BE22AD4AC8F0036EB52 /* ContentView.swift in Sources */,
+				F4589BF12AD4BE6C0036EB52 /* InstructionsView.swift in Sources */,
 				F4589BE02AD4AC8F0036EB52 /* PHONE_DOWNApp.swift in Sources */,
+				F4589BEF2AD4B6F80036EB52 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

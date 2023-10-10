@@ -11,7 +11,11 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
-            LinearGradient(colors: [.cyan, .blue, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: 
+                            [Color(red: 139/255, green: 80/255, blue: 240/255),
+                             Color(red: 10/255, green: 200/255, blue: 50/255)],
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
                 .opacity(0.85)
                 .ignoresSafeArea()
             
@@ -20,17 +24,13 @@ struct ContentView: View {
                     .font(.system(size: 70))
                     .colorInvert()
                     .foregroundStyle(.tint)
-                    .padding()
-                Text("Begin.")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .padding(.horizontal, 30.0)
-                    .padding(.vertical, 10.0)
-                    .foregroundStyle(Color.white)
-                    .background(Color.orange)
-                    .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                    .shadow(color: .orange.opacity(0.7), radius: 5, x: 5, y: 5)
-                    .padding()
+                    .padding(.bottom, -10.0)
+                BigButtonView(text: "Begin.",
+                           color: Color.orange)
+                .padding(.bottom, -15.0)
+                SmallButtonView(text: "Statistics + Sharing",
+                           color: Color.orange)
+
             }
         }
     }
