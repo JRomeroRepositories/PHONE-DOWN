@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42827DC2AD749D800D88677 /* BackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42827DB2AD749D800D88677 /* BackgroundColors.swift */; };
+		F42827DE2AD74F2B00D88677 /* CMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42827DD2AD74F2B00D88677 /* CMManager.swift */; };
 		F4589BE02AD4AC8F0036EB52 /* PHONE_DOWNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BDF2AD4AC8F0036EB52 /* PHONE_DOWNApp.swift */; };
-		F4589BE22AD4AC8F0036EB52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BE12AD4AC8F0036EB52 /* ContentView.swift */; };
 		F4589BE42AD4AC900036EB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4589BE32AD4AC900036EB52 /* Assets.xcassets */; };
 		F4589BE82AD4AC900036EB52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4589BE72AD4AC900036EB52 /* Preview Assets.xcassets */; };
-		F4589BEF2AD4B6F80036EB52 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BEE2AD4B6F80036EB52 /* ButtonView.swift */; };
 		F4589BF12AD4BE6C0036EB52 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */; };
+		F4589BF32AD4E8710036EB52 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF22AD4E8710036EB52 /* InstructionView.swift */; };
+		F4589BF52AD738520036EB52 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF42AD738520036EB52 /* LandingPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F42827DB2AD749D800D88677 /* BackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColors.swift; sourceTree = "<group>"; };
+		F42827DD2AD74F2B00D88677 /* CMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMManager.swift; sourceTree = "<group>"; };
 		F4589BDC2AD4AC8F0036EB52 /* PHONE-DOWN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PHONE-DOWN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4589BDF2AD4AC8F0036EB52 /* PHONE_DOWNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHONE_DOWNApp.swift; sourceTree = "<group>"; };
-		F4589BE12AD4AC8F0036EB52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4589BE32AD4AC900036EB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4589BE52AD4AC900036EB52 /* PHONE_DOWN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PHONE_DOWN.entitlements; sourceTree = "<group>"; };
 		F4589BE72AD4AC900036EB52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F4589BEE2AD4B6F80036EB52 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		F4589BF22AD4E8710036EB52 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		F4589BF42AD738520036EB52 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		F4589BD32AD4AC8F0036EB52 = {
 			isa = PBXGroup;
 			children = (
+				F4589BF22AD4E8710036EB52 /* InstructionView.swift */,
+				F42827DD2AD74F2B00D88677 /* CMManager.swift */,
 				F4589BDE2AD4AC8F0036EB52 /* PHONE-DOWN */,
 				F4589BDD2AD4AC8F0036EB52 /* Products */,
 			);
@@ -57,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				F4589BDF2AD4AC8F0036EB52 /* PHONE_DOWNApp.swift */,
-				F4589BE12AD4AC8F0036EB52 /* ContentView.swift */,
+				F4589BF42AD738520036EB52 /* LandingPageView.swift */,
+				F42827DB2AD749D800D88677 /* BackgroundColors.swift */,
 				F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */,
-				F4589BEE2AD4B6F80036EB52 /* ButtonView.swift */,
 				F4589BE32AD4AC900036EB52 /* Assets.xcassets */,
 				F4589BE52AD4AC900036EB52 /* PHONE_DOWN.entitlements */,
 				F4589BE62AD4AC900036EB52 /* Preview Content */,
@@ -145,10 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4589BE22AD4AC8F0036EB52 /* ContentView.swift in Sources */,
+				F42827DC2AD749D800D88677 /* BackgroundColors.swift in Sources */,
+				F4589BF52AD738520036EB52 /* LandingPageView.swift in Sources */,
 				F4589BF12AD4BE6C0036EB52 /* InstructionsView.swift in Sources */,
 				F4589BE02AD4AC8F0036EB52 /* PHONE_DOWNApp.swift in Sources */,
-				F4589BEF2AD4B6F80036EB52 /* ButtonView.swift in Sources */,
+				F4589BF32AD4E8710036EB52 /* InstructionView.swift in Sources */,
+				F42827DE2AD74F2B00D88677 /* CMManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +283,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "PHONE-DOWN/PHONE_DOWN.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PHONE-DOWN/Preview Content\"";
+				DEVELOPMENT_TEAM = UUKWMW7JA2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -311,9 +321,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "PHONE-DOWN/PHONE_DOWN.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PHONE-DOWN/Preview Content\"";
+				DEVELOPMENT_TEAM = UUKWMW7JA2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

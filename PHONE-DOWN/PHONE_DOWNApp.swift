@@ -11,7 +11,7 @@ import SwiftUI
 struct PHONE_DOWNApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingPageView()
         }
     }
 }
