@@ -13,8 +13,13 @@
 		F4589BE42AD4AC900036EB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4589BE32AD4AC900036EB52 /* Assets.xcassets */; };
 		F4589BE82AD4AC900036EB52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4589BE72AD4AC900036EB52 /* Preview Assets.xcassets */; };
 		F4589BF12AD4BE6C0036EB52 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */; };
-		F4589BF32AD4E8710036EB52 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF22AD4E8710036EB52 /* InstructionView.swift */; };
+		F4589BF32AD4E8710036EB52 /* ReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF22AD4E8710036EB52 /* ReadyView.swift */; };
 		F4589BF52AD738520036EB52 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4589BF42AD738520036EB52 /* LandingPageView.swift */; };
+		F4C568A32AD7993100923601 /* TimeDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C568A22AD7993100923601 /* TimeDoneView.swift */; };
+		F4C568A52AD799F400923601 /* CountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C568A42AD799F400923601 /* CountingView.swift */; };
+		F4C568A72AD7A60900923601 /* TimeNatLang.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C568A62AD7A60900923601 /* TimeNatLang.swift */; };
+		F4C568A92AD7AFED00923601 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C568A82AD7AFED00923601 /* ShareView.swift */; };
+		F4C568AB2AD7B0DF00923601 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C568AA2AD7B0DF00923601 /* StatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +31,13 @@
 		F4589BE52AD4AC900036EB52 /* PHONE_DOWN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PHONE_DOWN.entitlements; sourceTree = "<group>"; };
 		F4589BE72AD4AC900036EB52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
-		F4589BF22AD4E8710036EB52 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		F4589BF22AD4E8710036EB52 /* ReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyView.swift; sourceTree = "<group>"; };
 		F4589BF42AD738520036EB52 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		F4C568A22AD7993100923601 /* TimeDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDoneView.swift; sourceTree = "<group>"; };
+		F4C568A42AD799F400923601 /* CountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
+		F4C568A62AD7A60900923601 /* TimeNatLang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNatLang.swift; sourceTree = "<group>"; };
+		F4C568A82AD7AFED00923601 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		F4C568AA2AD7B0DF00923601 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +54,7 @@
 		F4589BD32AD4AC8F0036EB52 = {
 			isa = PBXGroup;
 			children = (
-				F4589BF22AD4E8710036EB52 /* InstructionView.swift */,
+				F4589BF22AD4E8710036EB52 /* ReadyView.swift */,
 				F42827DD2AD74F2B00D88677 /* CMManager.swift */,
 				F4589BDE2AD4AC8F0036EB52 /* PHONE-DOWN */,
 				F4589BDD2AD4AC8F0036EB52 /* Products */,
@@ -65,7 +75,12 @@
 				F4589BDF2AD4AC8F0036EB52 /* PHONE_DOWNApp.swift */,
 				F4589BF42AD738520036EB52 /* LandingPageView.swift */,
 				F42827DB2AD749D800D88677 /* BackgroundColors.swift */,
+				F4C568A22AD7993100923601 /* TimeDoneView.swift */,
+				F4C568AA2AD7B0DF00923601 /* StatisticsView.swift */,
+				F4C568A82AD7AFED00923601 /* ShareView.swift */,
 				F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */,
+				F4C568A42AD799F400923601 /* CountingView.swift */,
+				F4C568A62AD7A60900923601 /* TimeNatLang.swift */,
 				F4589BE32AD4AC900036EB52 /* Assets.xcassets */,
 				F4589BE52AD4AC900036EB52 /* PHONE_DOWN.entitlements */,
 				F4589BE62AD4AC900036EB52 /* Preview Content */,
@@ -151,11 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C568A92AD7AFED00923601 /* ShareView.swift in Sources */,
+				F4C568A52AD799F400923601 /* CountingView.swift in Sources */,
 				F42827DC2AD749D800D88677 /* BackgroundColors.swift in Sources */,
 				F4589BF52AD738520036EB52 /* LandingPageView.swift in Sources */,
 				F4589BF12AD4BE6C0036EB52 /* InstructionsView.swift in Sources */,
 				F4589BE02AD4AC8F0036EB52 /* PHONE_DOWNApp.swift in Sources */,
-				F4589BF32AD4E8710036EB52 /* InstructionView.swift in Sources */,
+				F4C568A32AD7993100923601 /* TimeDoneView.swift in Sources */,
+				F4C568A72AD7A60900923601 /* TimeNatLang.swift in Sources */,
+				F4C568AB2AD7B0DF00923601 /* StatisticsView.swift in Sources */,
+				F4589BF32AD4E8710036EB52 /* ReadyView.swift in Sources */,
 				F42827DE2AD74F2B00D88677 /* CMManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

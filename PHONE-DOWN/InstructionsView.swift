@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct InstructionsView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                Text("""
+                    Place phone face-down on a clean 
+                    flat surface and get started
+                    on work immediately.
+                    """)
+                .font(.headline)
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color("MessageColor"))
+                .padding()
+                .offset(y:-20)
+            }
     }
 }
 

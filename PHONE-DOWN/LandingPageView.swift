@@ -21,17 +21,17 @@ struct LandingPageView: View {
                         .padding(.bottom, 10.0)
                     
                     NavigationLink(
-                        destination: InstructionView(),
+                        destination: ReadyView(),
                         label: {
                             BigButtonView(text: "Begin.",
                                           color: Color("ButtonColor")) } )
                     .padding(.bottom, 7.0)
                     
                     NavigationLink(
-                        destination: InstructionView(),
+                        destination: StatisticsView(),
                         label: {
                             SmallButtonView(text: "Statistics + Sharing",
-                                          color: Color("ButtonColor")) } )
+                                            color: Color("ButtonColor")) } )
                 }
                 .offset(y:-15)
             }
