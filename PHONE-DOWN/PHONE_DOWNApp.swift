@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct PHONE_DOWNApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+        print("Configured Firebase!")
+    }
+    
     var body: some Scene {
         WindowGroup {
-            LandingPageView()
+            NavigationStack {
+                RootView()
+                //LandingPageView()
+            }
         }
     }
 }

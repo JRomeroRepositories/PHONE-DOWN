@@ -10,7 +10,7 @@ import SwiftUI
 struct LandingPageView: View {
     var body: some View {
         NavigationView {
-            ZStack {
+                        ZStack {
                 // Background
                 BackgroundColors()
                 
@@ -20,6 +20,8 @@ struct LandingPageView: View {
                         .foregroundColor(Color("ButtonColor"))
                         .padding(.bottom, 10.0)
                     
+                    //AuthenticationView()
+
                     NavigationLink(
                         destination: ReadyView(),
                         label: {
