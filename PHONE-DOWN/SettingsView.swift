@@ -59,6 +59,12 @@ struct SettingsView: View {
                             }
                         }
                     }
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(height: 50)
+                    .frame(maxWidth: 320)
+                    .background(Color("ButtonColor"))
+                    .cornerRadius(15)
                     
                     Button("Reset Password") {
                         Task {
@@ -70,6 +76,12 @@ struct SettingsView: View {
                             }
                         }
                     }
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(height: 50)
+                    .frame(maxWidth: 320)
+                    .background(Color("ButtonColor"))
+                    .cornerRadius(15)
                     
                     Button("Update Password") {
                         Task {
@@ -81,6 +93,12 @@ struct SettingsView: View {
                             }
                         }
                     }
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(height: 50)
+                    .frame(maxWidth: 320)
+                    .background(Color("ButtonColor"))
+                    .cornerRadius(15)
                     
                     Button("Update Email") {
                         Task {
@@ -90,21 +108,19 @@ struct SettingsView: View {
                             } catch {
                                 print(error)
                             }
-                            Label {
-                                Text("Begin")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-                                    .frame(height: 55)
-                                    .frame(maxWidth: 300)
-                                    .background(Color("ButtonColor"))
-                                    .cornerRadius(15)
-                                    .padding()
-                            }
                         }
                     }
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(height: 50)
+                    .frame(maxWidth: 320)
+                    .background(Color("ButtonColor"))
+                    .cornerRadius(15)
                 }
+                .offset(y:20)
             }
             .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(false)
         }
     }

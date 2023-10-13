@@ -13,31 +13,43 @@ struct TimeDoneView: View {
     
     var body: some View {
         // Show BarelyVisible Update
-        VStack {
-            Text("Time to celebrate!")
-                .font(.title)
-                .foregroundColor(Color("MessageColor"))
-                .padding()
-            
-            Text(TimeNatLang(secondsElapsed:timedone))
-                .font(.title)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color("MessageColor"))
-                .padding()
-            
-            Text("Time well spent.")
-            .font(.headline)
-            .fontWeight(.light)
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color("MessageColor"))
-            .padding()
-            
-            NavigationLink(
-                destination: ShareView(),
-                label: {
-                    SmallButtonView(text: "Share",
-                                    color: Color("ButtonColor")) } )
-
+        ZStack {
+            BackgroundColors()
+            VStack {
+                Text("Excellent Work!")
+                    .font(.title)
+                    .fontWeight(.light)
+                    .foregroundColor(Color("MessageColor"))
+                    .padding()
+                
+                Text(TimeNatLang(secondsElapsed:timedone))
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color("MessageColor"))
+                    .padding()
+                    .offset(y:-25)
+                
+                Text("Time well spent.")
+                    .font(.title)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color("MessageColor"))
+                    .padding()
+                    .offset(y:-35)
+                
+                NavigationLink(
+                    destination: ShareView(),
+                    label: {
+                        Text("Share")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .frame(height: 50)
+                            .frame(maxWidth: 320)
+                            .background(Color("ButtonColor"))
+                            .cornerRadius(15) }
+                    
+            ) }
         }
     }
 }

@@ -40,16 +40,25 @@ struct SignInEmailView: View {
         ZStack {
             BackgroundColors()
             VStack {
+                Image(systemName: "iphone.gen3.slash.circle")
+                    .font(.system(size: 125))
+                    .foregroundColor(Color("ButtonColor"))
+                    .padding(.bottom, 10.0)
+                
                 TextField("Email...", text: $viewModel.email)
                     .padding()
-                    .background(Color.gray.opacity(0.4))
-                    .cornerRadius(10)
+                    .background(Color.gray.opacity(0.5))
+                    .frame(height: 50)
+                    .frame(maxWidth: 320)
+                    .cornerRadius(15)
                     .padding()
                 
                 SecureField("Password...", text: $viewModel.password)
                     .padding()
-                    .background(Color.gray.opacity(0.4))
-                    .cornerRadius(10)
+                    .background(Color.gray.opacity(0.5))
+                    .frame(height: 50)
+                    .frame(maxWidth: 320)
+                    .cornerRadius(15)
                     .padding()
                     .offset(y:-30)
                 
@@ -73,15 +82,15 @@ struct SignInEmailView: View {
                         }
                     }
                 } label: {
-                    Text("Sign in")
+                    Text("Sign In")
                         .font(.headline)
                         .foregroundStyle(.white)
-                        .frame(height: 55)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                        .frame(height: 50)
+                        .frame(maxWidth: 320)
+                        .background(Color("ButtonColor"))
+                        .cornerRadius(15)
                         .padding()
-                        .offset(y:-40)
+                        .offset(y:-50)
                     
                 }
             }
