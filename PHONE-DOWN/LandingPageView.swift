@@ -16,24 +16,52 @@ struct LandingPageView: View {
                 
                 VStack {
                     Image(systemName: "iphone.gen3.slash.circle")
-                        .font(.system(size: 70))
+                        .font(.system(size: 100))
                         .foregroundColor(Color("ButtonColor"))
                         .padding(.bottom, 10.0)
                     
-                    //AuthenticationView()
-
                     NavigationLink(
                         destination: ReadyView(),
                         label: {
-                            BigButtonView(text: "Begin.",
-                                          color: Color("ButtonColor")) } )
-                    .padding(.bottom, 7.0)
-                    
+                            Text("Begin")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                                .frame(height: 55)
+                                .frame(maxWidth: 300)
+                                .background(Color("ButtonColor"))
+                                .cornerRadius(15)
+                                .padding()
+                                .offset(y:30)
+                        }  )
                     NavigationLink(
                         destination: StatisticsView(),
                         label: {
-                            SmallButtonView(text: "Statistics + Sharing",
-                                            color: Color("ButtonColor")) } )
+                            Text("Statistics + Sharing")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                                .frame(height: 55)
+                                .frame(maxWidth: 300)
+                                .background(Color("ButtonColor"))
+                                .cornerRadius(15)
+                                .padding()
+                                //.offset(y:-30)
+                            
+                        } )
+                    
+                    NavigationLink(
+                        destination: SettingsView(showSignInView: .constant(false)),
+                        label: {
+                            Text("Settings")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                                .frame(height: 55)
+                                .frame(maxWidth: 300)
+                                .background(Color("ButtonColor"))
+                                .cornerRadius(15)
+                                .padding()
+                                .offset(y:-30)
+                            
+                        } )
                 }
                 .offset(y:-15)
             }

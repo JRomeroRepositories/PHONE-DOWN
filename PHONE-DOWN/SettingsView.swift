@@ -36,7 +36,7 @@ final class SettingsViewModel: ObservableObject {
     }
     
 }
-    
+
 
 
 struct SettingsView: View {
@@ -45,53 +45,71 @@ struct SettingsView: View {
     @Binding var showSignInView: Bool
     
     var body: some View {
-        List {
-            Button("Log out") {
-                Task {
-                    do {
-                        try viewModel.signOut()
-                        showSignInView = true
-                    } catch {
-                        print(error)
+        NavigationView {
+            ZStack {
+                BackgroundColors()
+                ScrollView {
+                    Button("Log out") {
+                        Task {
+                            do {
+                                try viewModel.signOut()
+                                showSignInView = true
+                            } catch {
+                                print(error)
+                            }
+                        }
+                    }
+                    
+                    Button("Reset Password") {
+                        Task {
+                            do {
+                                try await viewModel.resetPassword()
+                                print("Password RESET!")
+                            } catch {
+                                print(error)
+                            }
+                        }
+                    }
+                    
+                    Button("Update Password") {
+                        Task {
+                            do {
+                                try await viewModel.updatePassword()
+                                print("Password Updated!")
+                            } catch {
+                                print(error)
+                            }
+                        }
+                    }
+                    
+                    Button("Update Email") {
+                        Task {
+                            do {
+                                try await viewModel.updateEmail()
+                                print("Email Updated!")
+                            } catch {
+                                print(error)
+                            }
+                            Label {
+                                Text("Begin")
+                                    .font(.headline)
+                                    .foregroundStyle(.white)
+                                    .frame(height: 55)
+                                    .frame(maxWidth: 300)
+                                    .background(Color("ButtonColor"))
+                                    .cornerRadius(15)
+                                    .padding()
+                            }
+                        }
                     }
                 }
             }
-            
-            Button("Reset Password") {
-                Task {
-                    do {
-                        try await viewModel.resetPassword()
-                        print("Password RESET!")
-                    } catch {
-                        print(error)
-                    }
-                }
-            }
-            
-            Button("Update Password") {
-                Task {
-                    do {
-                        try await viewModel.updatePassword()
-                        print("Password Updated!")
-                    } catch {
-                        print(error)
-                    }
-                }
-            }
-            
-            Button("Update Email") {
-                Task {
-                    do {
-                        try await viewModel.updateEmail()
-                        print("Email Updated!")
-                    } catch {
-                        print(error)
-                    }
-                }
-            }
+            .navigationTitle("Settings")
+            .navigationBarBackButtonHidden(false)
         }
     }
 }
+
 
 #Preview {
     SettingsView(showSignInView: .constant(false))

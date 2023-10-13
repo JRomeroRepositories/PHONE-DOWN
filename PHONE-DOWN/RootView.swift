@@ -12,8 +12,13 @@ struct RootView: View {
     @State private var showSignInView: Bool = false
     var body: some View {
         ZStack {
-            NavigationStack {
-                SettingsView(showSignInView: $showSignInView)
+            BackgroundColors()
+            
+            VStack {
+                NavigationStack {
+                    LandingPageView()
+                    //SettingsView(showSignInView: $showSignInView)
+                }
             }
         }
         .onAppear {

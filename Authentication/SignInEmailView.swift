@@ -30,54 +30,63 @@ final class SignInEmailViewModel: ObservableObject {
     }
 }
 
+
 struct SignInEmailView: View {
     
     @StateObject private var viewModel = SignInEmailViewModel()
     @Binding var showSignInView: Bool
     
     var body: some View {
-        VStack {
-            TextField("Email...", text: $viewModel.email)
-                .padding()
-                .background(Color.gray.opacity(0.4))
-                .cornerRadius(10)
-            
-            SecureField("Password...", text: $viewModel.password)
-                .padding()
-                .background(Color.gray.opacity(0.4))
-                .cornerRadius(10)
-            
-            Button {
-                // MARK: note that sign up and sign in can be seperate buttons based on preference
-                Task {
-                    do {
-                        try await viewModel.signUp()
-                        showSignInView = false
-                        return
-                    } catch {
-                        print(error)
-                    }
-                    
-                    do {
-                        try await viewModel.signIn()
-                        showSignInView = false
-                        return
-                    } catch {
-                        print(error)
-                    }
-                }
-            } label: {
-                Text("Sign in")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .frame(height: 55)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
+        ZStack {
+            BackgroundColors()
+            VStack {
+                TextField("Email...", text: $viewModel.email)
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
                     .cornerRadius(10)
+                    .padding()
                 
+                SecureField("Password...", text: $viewModel.password)
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
+                    .padding()
+                    .offset(y:-30)
+                
+                Button {
+                    // MARK: note that sign up and sign in can be seperate buttons based on preference
+                    Task {
+                        do {
+                            try await viewModel.signUp()
+                            showSignInView = false
+                            return
+                        } catch {
+                            print(error)
+                        }
+                        
+                        do {
+                            try await viewModel.signIn()
+                            showSignInView = false
+                            return
+                        } catch {
+                            print(error)
+                        }
+                    }
+                } label: {
+                    Text("Sign in")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding()
+                        .offset(y:-40)
+                    
+                }
             }
+            .navigationTitle("Sign In With Email")
         }
-        .navigationTitle("Sign In With Email")
     }
 }
 

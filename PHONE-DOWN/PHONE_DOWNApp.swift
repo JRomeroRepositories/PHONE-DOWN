@@ -20,7 +20,6 @@ struct PHONE_DOWNApp: App {
         WindowGroup {
             NavigationStack {
                 RootView()
-                //LandingPageView()
             }
         }
     }
