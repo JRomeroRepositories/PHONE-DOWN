@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F40546832AD8A4840000223D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40546822AD8A4840000223D /* RootView.swift */; };
 		F40546852AD8A9420000223D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40546842AD8A9420000223D /* SettingsView.swift */; };
+		F40546892AD9FBA50000223D /* StatisticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40546882AD9FBA50000223D /* StatisticsManager.swift */; };
 		F405DC332AD84EB200BBC9DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F405DC322AD84EB200BBC9DF /* GoogleService-Info.plist */; };
 		F405DC362AD851AD00BBC9DF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F405DC352AD851AD00BBC9DF /* FirebaseAnalytics */; };
 		F405DC3A2AD851AD00BBC9DF /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F405DC392AD851AD00BBC9DF /* FirebaseAnalyticsSwift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		F40546822AD8A4840000223D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F40546842AD8A9420000223D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F40546882AD9FBA50000223D /* StatisticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsManager.swift; sourceTree = "<group>"; };
 		F405DC322AD84EB200BBC9DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F405DC432AD85A3100BBC9DF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		F405DC452AD85C4D00BBC9DF /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				F42827DB2AD749D800D88677 /* BackgroundColors.swift */,
 				F4C568A22AD7993100923601 /* TimeDoneView.swift */,
 				F4C568AA2AD7B0DF00923601 /* StatisticsView.swift */,
+				F40546882AD9FBA50000223D /* StatisticsManager.swift */,
 				F4C568A82AD7AFED00923601 /* ShareView.swift */,
 				F4589BF02AD4BE6C0036EB52 /* InstructionsView.swift */,
 				F4C568A42AD799F400923601 /* CountingView.swift */,
@@ -226,6 +229,7 @@
 				F4C568A32AD7993100923601 /* TimeDoneView.swift in Sources */,
 				F40546852AD8A9420000223D /* SettingsView.swift in Sources */,
 				F4C568A72AD7A60900923601 /* TimeNatLang.swift in Sources */,
+				F40546892AD9FBA50000223D /* StatisticsManager.swift in Sources */,
 				F405DC482AD8636400BBC9DF /* Authentication Manager.swift in Sources */,
 				F4C568AB2AD7B0DF00923601 /* StatisticsView.swift in Sources */,
 				F4589BF32AD4E8710036EB52 /* ReadyView.swift in Sources */,
